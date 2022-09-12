@@ -67,27 +67,11 @@ function generateTrip(pl, pe, ti) {
   let place = pl[Math.floor(Math.random() * pl.length)];
   let person = pe[Math.floor(Math.random() * pe.length)];
   let time = ti[Math.floor(Math.random() * ti.length)];
-  if (pe === "Alone") {
-    return (
-      "Your next trip will take place on " +
-      place +
-      ", all " +
-      person +
-      " and it will be next " +
-      time
-    );
-  } else {
-    return (
-      "Your next trip will take place on " +
-      place +
-      ", you're going with " +
-      person +
-      " and it will be next " +
-      time
-    );
-  }
+  if (pe === "Alone") { 
+      return ("Your next trip will take place on " + place + ", all " + person + " and it will be next " + time);
+  } else { 
+      return ("Your next trip will take place on " + place + ", you're going with " + person + " and it will be next " + time); }
 }
-
 
 console.table(places);
 console.table(people);
